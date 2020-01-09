@@ -12,6 +12,7 @@ Jinja2==2.10.3
 MarkupSafe==1.1.1
 mysqlclient==1.4.6
 pathspec==0.7.0
+python-dotenv==0.10.3
 pytz==2019.3
 regex==2019.12.20
 six==1.13.0

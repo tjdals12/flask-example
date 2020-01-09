@@ -1,10 +1,13 @@
+from dotenv import load_dotenv
 import os
+
+load_dotenv()
 
 DEBUG = os.environ.get("DEBUG", True)
 HOST = os.environ.get("HOST", "127.0.0.1")
 PORT = os.environ.get("PORT", 4000)
 DB_TYPE = os.environ.get("PROTOCOL", "oracle")
-SECRET_KEY = "flasknotewithsqlalchemy"
+SECRET_KEY = os.environ.get("SECRET_KEY", "")
 
 # MySql
 mysql_config = {
